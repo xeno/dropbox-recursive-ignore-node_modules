@@ -1,28 +1,47 @@
 {
-  "name": "dropbox-ignore-node_modules",
-  "version": "1.0.3",
-  "description": "This package will tell Dropbox to ignore the node_modules directory inside your project.",
+  "name": "dropbox-recursive-ignore-node_modules",
+  "version": "1.0.0",
+  "description": "Recursively ignores node_modules folders on your dropbox account so they won't sync",
   "main": "index.js",
-  "author": "Trent Mackness",
+  "dependencies": {
+    "balanced-match": "^1.0.0",
+    "brace-expansion": "^1.1.11",
+    "concat-map": "^0.0.1",
+    "fs.realpath": "^1.0.0",
+    "glob": "^7.1.6",
+    "inflight": "^1.0.6",
+    "inherits": "^2.0.4",
+    "is-docker": "^2.1.1",
+    "is-wsl": "^2.2.0",
+    "minimatch": "^3.0.4",
+    "once": "^1.4.0",
+    "path-is-absolute": "^1.0.1",
+    "wrappy": "^1.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xeno/dropbox-recursive-ignore-node_modules.git"
+  },
+  "keywords": [
+    "dropbox",
+    "node_modules",
+    "sync",
+    "node modules",
+    "cli",
+    "nosync"
+  ],
+  "author": "Xeno",
   "license": "ISC",
   "bin": {
     "dropignore": "./index.js",
     "di": "./index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/tmackness/dropbox-ignore-node_modules.git"
-  },
   "bugs": {
-    "url": "https://github.com/tmackness/dropbox-ignore-node_modules/issues"
+    "url": "https://github.com/xeno/dropbox-recursive-ignore-node_modules/issues"
   },
-  "keywords": [
-    "dropbox",
-    "ignore",
-    "sync",
-    "node modules",
-    "node_modules",
-    "cli",
-    "nosync"
-  ]
+  "homepage": "https://github.com/xeno/dropbox-recursive-ignore-node_modules#readme"
 }
